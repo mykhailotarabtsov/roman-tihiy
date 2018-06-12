@@ -51,8 +51,9 @@ $(document).ready(function() {
 	});
 	$("#about").click(function () {
 			// load about page on click
-			$("#ajax-content").hide().html("<h1>Page 2</h1><p>Page 2 has been loaded</p>").fadeIn('slow');
+			$("#ajax-content").hide().load("about.html").fadeIn('slow');
 			api.close();
+			$('.hamburger-inner').addClass('hamburger-reverse');
 	});
 	$("#contact").click(function () {
 			// load contact form onclick
