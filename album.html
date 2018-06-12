@@ -1,0 +1,54 @@
+
+<div class="album">
+	<div class="container pos__relative">
+		<div class="row">
+			<div class="col-md-2"><img src="./img/ROMAN-TIHIY-black.svg" alt="roman tihy" class="img-fluid margin__img-top"></div>
+			<div class="col-md-8">
+				<div class="grid">
+					<div class="grid-sizer"></div>
+					<img src="./img/IMAGE1.png" alt="tihiy" class="grid-item">
+					<img src="./img/IMAGE2.png" alt="tihiy" class="grid-item grid-item--height2">
+					<img src="./img/IMAGE3.png" alt="tihiy" class="grid-item">
+					<img src="./img/IMAGE4.png" alt="tihiy" class="grid-item grid-item--height2">
+					<img src="./img/IMAGE5.png" alt="tihiy" class="grid-item">
+					<img src="./img/IMAGE6.png" alt="tihiy" class="grid-item">
+					<img src="./img/IMAGE7.png" alt="tihiy" class="grid-item">
+					<img src="./img/IMAGE8.png" alt="tihiy" class="grid-item">
+					<img src="./img/IMAGE9.png" alt="tihiy" class="grid-item grid-item--height2">
+					<img src="./img/IMAGE10.png" alt="tihiy" class="grid-item">
+					<img src="./img/IMAGE11.png" alt="tihiy" class="grid-item grid-item--height2">
+					<img src="./img/IMAGE12.png" alt="tihiy" class="grid-item">
+					<img src="./img/IMAGE13.png" alt="tihiy" class="grid-item">
+					<img src="./img/IMAGE14.png" alt="tihiy" class="grid-item">
+					<img src="./img/IMAGE15.png" alt="tihiy" class="grid-item">
+					<img src="./img/IMAGE16.png" alt="tihiy" class="grid-item grid-item--height2">
+					<img src="./img/IMAGE17.png" alt="tihiy" class="grid-item">
+					<img src="./img/IMAGE18.png" alt="tihiy" class="grid-item">
+					<img src="./img/IMAGE19.png" alt="tihiy" class="grid-item">
+				</div>
+			</div>
+			<div class="col-md-2 text-right pos__absolute">
+				<a href="#" id="about-project">About project</a>
+			</div>
+			<div class="col-md-2 text-right">
+				<h4 class="margin__img-top">City <br/>Streets</h4>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /.album -->
+<script>
+	$('.grid').masonry({
+		// options
+		itemSelector: '.grid-item',
+		columnWidth: '.grid-sizer',
+  	percentPosition: true
+	});
+	$("#about-project").click(function () {
+			// load contact form onclick
+			$("#ajax-content").hide().load("about-project.html").fadeIn('slow');
+	});
+</script>
+	
+	
+		

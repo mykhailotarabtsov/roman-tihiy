@@ -1,0 +1,32 @@
+<main class="main projects">
+		<div class="container" style="height: calc(100% - 30px)">
+			<div class="row align-items-center" style="height: calc(100% - 30px);">
+				<div class="col-md-2"><img src="./img/ROMAN-TIHIY-black.svg" alt="roman tihy" class="img-fluid"></div>
+				<div class="col-md-7 offset-md-1">
+					<div class="img__container">
+						<!-- <img src="./img/Photo.png" alt="roman tihiy"> -->
+						<div class="img__text">
+							<h3>City <!-- <span class="color__reverse">--> Streets <!-- </span>-->  </h3> 
+							<a href="#" id="album">BROWSE <!-- <span class="color__reverse">--> PROJECT <!-- </span>--> </a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<ul class="bottom__nav text-center">
+					<li><a href="#">instagram</a></li>
+					<li><a href="#">facebook</a></li>
+					<li><a href="#">flickr</a></li>
+				</ul>
+			</div>
+		</div>
+	</main>
+	<!-- /.main -->
+	<script>
+		$("#album").click(function () {
+			// load home page on click
+			$("#ajax-content").hide().load("album.html").fadeIn('slow');
+			api.close();
+			$('.hamburger-inner').addClass('hamburger-reverse');
+		});
+	</script>
