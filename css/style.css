@@ -4,6 +4,7 @@
   background: url("../img/Blur-photo.png") no-repeat 50% 50%;
   -webkit-background-size: cover;
           background-size: cover;
+  min-height: 100vh;
   position: relative;
   padding: 40px 0; }
   .main__copyright {
