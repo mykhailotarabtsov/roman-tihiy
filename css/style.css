@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(./hamburgers.min.css);
 @import url(./slick.css);
 @font-face {
@@ -1029,6 +1030,27 @@
   .about .h3 {
     position: relative;
     font-size: 1.5rem; }
+    .about .h3:before {
+      content: '’’';
+      font-size: 14rem;
+      font-family: 'abril_fatfaceregular';
+      position: absolute;
+      left: -10px;
+      top: -0.7em;
+      z-index: -1;
+      color: rgba(217, 217, 217, 0.51);
+      -webkit-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+              transform: rotate(180deg); }
+    .about .h3:after {
+      content: '’’';
+      font-size: 14rem;
+      font-family: 'abril_fatfaceregular';
+      position: absolute;
+      right: -10px;
+      top: -0.3em;
+      z-index: -1;
+      color: rgba(217, 217, 217, 0.51); }
   .about p {
     font-size: 0.875rem;
     margin-bottom: 25px; }
